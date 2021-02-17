@@ -3,6 +3,9 @@
 
 int main()
 {
+
+    // Program to print all 3-digit numbers, such that a^3 + b^3 + c^3 = (abc)
+
     int num, a, b, c;
 
     num = 100;
