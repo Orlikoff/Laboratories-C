@@ -3,6 +3,8 @@
 
 #include <stdio.h>
 
+//Can be used to track errors with colors
+
 // void green(int bold)
 // {
 //     if (bold)
