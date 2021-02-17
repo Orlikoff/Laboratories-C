@@ -3,10 +3,11 @@
 
 int main()
 {
+    printf("Start of program...")
+        // Program to print all 3-digit numbers, such that a^3 + b^3 + c^3 = (abc)
 
-    // Program to print all 3-digit numbers, such that a^3 + b^3 + c^3 = (abc)
-
-    int num, a, b, c;
+        int num,
+        a, b, c;
 
     num = 100;
 
