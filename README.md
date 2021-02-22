@@ -1,12 +1,12 @@
 # Laboratories-C
 
-Lab 1:
-  Completed
-  Tests - DONE
-  Linter check - DONE
+Lab 1:<br>
+  Completed<br>
+  Tests - DONE <br>
+  Linter check - DONE<br>
   
-Lab 2:
-  Not Uploaded Yet
-  Completed
-  Tests - DONE
-  Linter check - DONE
+Lab 2:<br>
+  Not Uploaded Yet<br>
+  Completed<br>
+  Tests - DONE<br>
+  Linter check - DONE<br>
