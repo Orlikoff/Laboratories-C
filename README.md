@@ -6,7 +6,7 @@ Lab 1:
   Linter check - DONE
   
 Lab 2:
-  <p style = "color: blue;">Not Uploaded Yet</p>
+  Not Uploaded Yet
   Completed
   Tests - DONE
   Linter check - DONE
