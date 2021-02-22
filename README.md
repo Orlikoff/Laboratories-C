@@ -5,7 +5,7 @@ Lab 1:
   Tests - DONE
   Linter check - DONE
   
-Lab 2:<br>
+Lab 2:
   Not Uploaded Yet
   Completed
   Tests - DONE
