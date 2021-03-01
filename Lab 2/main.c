@@ -19,8 +19,8 @@ int main()
     //? Testing functions
     TEST_FUNCTION(float, getAngularVelocity, 1.00, 2 * PI);
     TEST_FUNCTION(float, getPeriod, 1.00, 1.00, 2 * PI);
-    TEST_FUNCTION(float, calculateForce, 4.2, 34.2, 65.7, 12.11);
-    TEST_FUNCTION(float, calculateDistance, 45.3, 2.33, 12.2, 54.6, 66.4);
+    TEST_FUNCTION(float, calculateForce, 333.0, 2.00, 2.50, 0.000001);
+    TEST_FUNCTION(float, calculateDistance, 2.0, 1.0, 2.0, PI, 0.75 * PI);
 
     //* Showing results
     RESULTS;

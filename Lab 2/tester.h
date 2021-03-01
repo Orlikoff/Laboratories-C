@@ -20,28 +20,48 @@ int CHECKED = 0;
     printf("\n\n\t\t*** DEBUG MODE ***\n\n"); \
     COLORFY(RESET);
 
-#define TEST_FUNCTION(type, func, expectedValue, params...)      \
-    {                                                            \
-        CHECKED++;                                               \
-        COLORFY(YELLOW);                                         \
-        printf("---Testing %s Function---\n", #func);            \
-        COLORFY(RESET);                                          \
-        COLORFY(GREEN);                                          \
-        type result = func(params);                              \
-        if (result != expectedValue)                             \
-        {                                                        \
-            INCORRECT++;                                         \
-            COLORFY(RED);                                        \
-            printf("---%s function is incorrect---\n\n", #func); \
-            COLORFY(RESET);                                      \
-        }                                                        \
-        else                                                     \
-        {                                                        \
-            CORRECT++;                                           \
-            COLORFY(GREEN);                                      \
-            printf("---%s function is correct---\n\n", #func);   \
-            COLORFY(RESET);                                      \
-        }                                                        \
+#define TEST_FUNCTION(type, func, expectedValue, params...)          \
+    {                                                                \
+        CHECKED++;                                                   \
+        COLORFY(YELLOW);                                             \
+        printf("---Testing %s Function---\n", #func);                \
+        COLORFY(RESET);                                              \
+        COLORFY(GREEN);                                              \
+        type result = func(params);                                  \
+        if (#type != "float")                                        \
+        {                                                            \
+            if (result != expectedValue)                             \
+            {                                                        \
+                INCORRECT++;                                         \
+                COLORFY(RED);                                        \
+                printf("---%s function is incorrect---\n\n", #func); \
+                COLORFY(RESET);                                      \
+            }                                                        \
+            else                                                     \
+            {                                                        \
+                CORRECT++;                                           \
+                COLORFY(GREEN);                                      \
+                printf("---%s function is correct---\n\n", #func);   \
+                COLORFY(RESET);                                      \
+            }                                                        \
+        }                                                            \
+        else                                                         \
+        {                                                            \
+            if (floorf(result) != expectedValue)                     \
+            {                                                        \
+                INCORRECT++;                                         \
+                COLORFY(RED);                                        \
+                printf("---%s function is incorrect---\n\n", #func); \
+                COLORFY(RESET);                                      \
+            }                                                        \
+            else                                                     \
+            {                                                        \
+                CORRECT++;                                           \
+                COLORFY(GREEN);                                      \
+                printf("---%s function is correct---\n\n", #func);   \
+                COLORFY(RESET);                                      \
+            }                                                        \
+        }                                                            \
     }
 
 #define RESULTS                                  \
