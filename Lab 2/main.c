@@ -2,9 +2,37 @@
 #include <stdlib.h>
 #include <conio.h>
 #include <math.h>
-#include "formulas.c"
-#include "input.c"
+#include "formulas.h"
+#include "input.h"
 
+// #define DEBUG
+
+//! for debugging--------------------
+#ifdef DEBUG
+#include "tester.h"
+
+int main()
+{
+    //** Starting debugging mode
+    START;
+
+    //? Testing functions
+    TEST_FUNCTION(float, getAngularVelocity, 1.00, 2 * PI);
+    TEST_FUNCTION(float, getPeriod, 1.00, 1.00, 2 * PI);
+    TEST_FUNCTION(float, calculateForce, 4.2, 34.2, 65.7, 12.11);
+    TEST_FUNCTION(float, calculateDistance, 45.3, 2.33, 12.2, 54.6, 66.4);
+
+    //* Showing results
+    RESULTS;
+
+    //? Waiting for the user
+    getch();
+
+    return 0;
+}
+//! for debugging--------------------
+#else
+//! Main cycle
 int main()
 {
     //TODO: Write some tests for this program and add variables checking
@@ -83,3 +111,5 @@ int main()
 
     return 0;
 }
+//! Main cycle
+#endif
