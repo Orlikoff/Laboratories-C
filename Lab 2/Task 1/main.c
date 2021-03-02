@@ -5,7 +5,7 @@
 #include "formulas.h"
 #include "input.h"
 
-// #define DEBUG
+#define DEBUG
 
 //! for debugging--------------------
 #ifdef DEBUG
