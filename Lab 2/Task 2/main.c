@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include <conio.h>
 #include "formula.h"
 
 // #define DEBUG
@@ -73,6 +74,9 @@ int main()
     {
         printf("\nIt's impossible to calculate with such parameters...\n");
     }
+
+    //? Waiting for user
+    getch();
 
     return 0;
 }
